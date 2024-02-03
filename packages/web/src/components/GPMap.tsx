@@ -57,7 +57,7 @@ const GPMap: React.FC = () => {
       {doctors.length > 0 && (
         <div className={styles.mapContainer}>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: `${process.env.API_KEY}` }}
+            bootstrapURLKeys={{ key: 'AIzaSyCzyc2lSjhKHeJm4dh3JictvHBiR4_UKRk' }}
             defaultCenter={userCurrentLocation as Coords | undefined}
             defaultZoom={13}
           >
