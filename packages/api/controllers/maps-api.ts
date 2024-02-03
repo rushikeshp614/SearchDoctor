@@ -31,7 +31,6 @@ const getData = async (ctx: Context): Promise<void> => {
             lng: parseFloat(lng as string),
           },
           keyword: 'doctor',
-          // key: "AIzaSyCzyc2lSjhKHeJm4dh3JictvHBiR4_UKRk",
           key: `${process.env.API_KEY}`,
           rankby: PlacesNearbyRanking.distance,
           type: 'health',
