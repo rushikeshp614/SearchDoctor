@@ -4,9 +4,9 @@ import cors from '@koa/cors';
 import errorHandlerMiddleware from './middleware/error-handler';
 import gpsRoutes from './routes/maps-route';
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({path:"../../.env"});
 
-const PORT = process.env.BACKEND_PORT;
+const PORT = process.env.BACKEND_PORT || 5000;
 
 const app = new Koa();
 

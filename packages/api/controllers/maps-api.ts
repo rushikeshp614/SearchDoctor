@@ -3,9 +3,9 @@ import { Client, PlacesNearbyRanking } from '@googlemaps/google-maps-services-js
 import delayAPI from '../utils/api-delay-time';
 import BadRequestError from '../errors/bad-request';
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({path:"../../.env"});
 
-const MAX_RESULTS = 50;
+const MAX_RESULTS = 100;
 const DELAY_BETWEEN_REQUESTS = 2000;
 
 
@@ -31,7 +31,6 @@ const getData = async (ctx: Context): Promise<void> => {
             lng: parseFloat(lng as string),
           },
           keyword: 'doctor',
-          // key: "AIzaSyCzyc2lSjhKHeJm4dh3JictvHBiR4_UKRk",
           key: `${process.env.API_KEY}`,
           rankby: PlacesNearbyRanking.distance,
           type: 'health',

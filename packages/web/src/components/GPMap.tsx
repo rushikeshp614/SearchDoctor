@@ -6,6 +6,8 @@ import { useDoctorContext, Doctor } from '../providers/DoctorContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserMd } from '@fortawesome/free-solid-svg-icons';
 import * as styles from '../styles/GPMap.module.css';
+import dotenv from 'dotenv';
+dotenv.config({path:"../../.env"});
 
 interface Coords {
   lat: number;
@@ -55,7 +57,7 @@ const GPMap: React.FC = () => {
       {doctors.length > 0 && (
         <div className={styles.mapContainer}>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyCzyc2lSjhKHeJm4dh3JictvHBiR4_UKRk' }}
+            bootstrapURLKeys={{ key: `${process.env.API_KEY}` }}
             defaultCenter={userCurrentLocation as Coords | undefined}
             defaultZoom={13}
           >
