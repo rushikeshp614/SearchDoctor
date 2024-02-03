@@ -1,0 +1,22 @@
+{
+  "name": "gp-search",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start": "ultra -r start"
+  },
+  "devDependencies": {
+    "process": "^0.11.10",
+    "ultra-runner": "^3.10.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "http-status-codes": "^2.3.0",
+    "ts-node": "^10.9.2"
+  }
+}

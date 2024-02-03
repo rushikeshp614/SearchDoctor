@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+}
+
+.listView {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 100vh; 
+}
+
+.listItem.selected{
+  background-color:#96bbf3
+}
+
+
+.listView ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listView li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.listView li:hover {
+  background-color: #f2f2f2;
+}
+
+.selected {
+  background-color: #e6f7ff;
+}
+.mapContainer {
+  flex: 2; 
+  height: 100vh; 
+}
+
+.mapIcon {
+  background: none;
+  color: #4285f4; 
+  transition: transform 0.3s ease-in-out; 
+ } 
+
+.mapIcon.selected {
+  transform: scale(1.8); 
+} 
+
+
