@@ -5,7 +5,7 @@ import BadRequestError from '../errors/bad-request';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const MAX_RESULTS = 50;
+const MAX_RESULTS = 100;
 const DELAY_BETWEEN_REQUESTS = 2000;
 
 
