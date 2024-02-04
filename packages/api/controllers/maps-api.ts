@@ -5,6 +5,9 @@ import BadRequestError from '../errors/bad-request';
 import dotenv from 'dotenv';
 dotenv.config({path:"../../.env"});
 
+
+
+
 const MAX_RESULTS = 100;
 const DELAY_BETWEEN_REQUESTS = 2000;
 
